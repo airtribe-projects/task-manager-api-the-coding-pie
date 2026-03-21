@@ -9,7 +9,8 @@ const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-app.use("/api/v1", routes);
+// app.use("/api/v1", routes);
+app.use("/", routes);
 
 // 404
 app.use(notFound);

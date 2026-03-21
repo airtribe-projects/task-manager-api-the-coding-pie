@@ -1,5 +1,6 @@
 const success = (res, { status = 200, data = {}, message = "" }) => {
-  return res.status(status).send({ success: true, data, message });
+  return res.status(status).send(data);
+  //   return res.status(status).send({ success: true, data, message });
 };
 
 const failure = (res, { message, status = 500 }) => {
